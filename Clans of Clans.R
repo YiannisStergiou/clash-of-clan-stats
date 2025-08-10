@@ -34,7 +34,7 @@ rownames(mydata)        <- 1:nrow(mydata)        # nolint
 # Εδώ καταγράφουμε τα δεδομένα σε ένα αρχείο "Στατιστικά του Clan.txt"
 sink("Clan Info.txt")
 
-cat("Ο παρακάτω πίνακας περιέχει στοιχεία όλων των clan members")
+cat("The following table has data of every member of your clan")
 print(kable(mydata,
             align   = "ccccc",
             format  = "simple"))
@@ -45,8 +45,7 @@ if (nrow(mydata_active) == nrow(mydata)) {
   cat("\n")
 
 } else {
-  cat("Ο παρακάτω πίνακας περιέχει στοιχεία των")
-  cat("clan members που είναι active")
+  cat("The following table has data of active members of your clan")
   print(kable(mydata_active,
               format  = "simple",
               align   = "ccccc"))
@@ -54,7 +53,7 @@ if (nrow(mydata_active) == nrow(mydata)) {
 cat("\n")
 cat("#########################################################################")
 cat("\n\n")
-cat("Ακολουθούν κάποια στατιστικά στοιχεία σχετικά με το Clan:")
+cat("Statistical analysis")
 cat("\n\n")
 
 # Στατιστική Ανάλυση των δεδομένων

@@ -1,0 +1,89 @@
+Ο παρακάτω πίνακας περιέχει στοιχεία όλων των clan members
+
+      Name          Level    Trophies    War.Stars    Activity 
+-----------------  -------  ----------  -----------  ----------
+    John Ster        218       5222        1339        active  
+      tinni          174       2866         935        active  
+      Zammy          175       2361         903       inactive 
+ georgesal15820y     201       2666         733       inactive 
+       JD            167       3074         722       inactive 
+   KING HASIB        158       2417         651        active  
+     Tonmoy_         149       4204         568        active  
+     Pratik          134       2775         517        active  
+    Max King         167       3289         475       inactive 
+ swagrubberducky     153       4163         461        active  
+     Maria!          135       3301         442        active  
+ Skull Crusher 2     118       2701         428        active  
+     McGoat0         131       1824         375       inactive 
+     Dekstar         105       1643         360       inactive 
+      isas           159       2416         342       inactive 
+     Neflis          119       3380         332        active  
+  THE GLADIATOR      134       2927         282       inactive 
+     Rupesh          147       2686         275        active  
+       ra            150       3336         268        active  
+      quiet          111       2230         265        active  
+     GeorGe          122       3805         246       inactive 
+      isas2          128       2324         246       inactive 
+ monz de siento      88        2392         200        active  
+    Aldiushi         92        1185         170       inactive 
+     Kusaro          122       2626         168       inactive 
+     shaxow          87        1735         163       inactive 
+   NITRO¥TEJAS       124       2177         110        active  
+  Dasean Thomas      112       2179         105       inactive 
+     MONKEY          90        1368         100       inactive 
+    k..haloi         107       1820         86        inactive 
+    xSamBellx        126       2545         84        inactive 
+   princess824       129       2891         82         active  
+     Purnota         171       2572         79        inactive 
+ Arin the slayer     66        1567         78        inactive 
+      Skew           127       1621         76        inactive 
+      Sox4-          85        2180         68         active  
+  arun dev 143       173       2797         62        inactive 
+   pandar boss       99        1812         51        inactive 
+     capalot         91        1994         43         active  
+      pwag           143       2853         33        inactive 
+     Carl..          101       2973         25         active  
+ comandante Nava     105       1562         25        inactive 
+       you           87        1531         24        inactive 
+     Leonai          109       2229         23        inactive 
+      hiru           111       1682         19        inactive 
+     samuvel         84        1351         19        inactive 
+      mitch          90        1730          7         active  
+     jhon1w          91        1525          0        inactive 
+     Kapswlh         12        409           0        inactive 
+
+Ο παρακάτω πίνακας περιέχει στοιχεία τωνclan members που είναι active
+
+      Name          Level    Trophies    War.Stars    Activity 
+-----------------  -------  ----------  -----------  ----------
+    John Ster        218       5222        1339        active  
+      tinni          174       2866         935        active  
+   KING HASIB        158       2417         651        active  
+     Tonmoy_         149       4204         568        active  
+     Pratik          134       2775         517        active  
+ swagrubberducky     153       4163         461        active  
+     Maria!          135       3301         442        active  
+ Skull Crusher 2     118       2701         428        active  
+     Neflis          119       3380         332        active  
+     Rupesh          147       2686         275        active  
+       ra            150       3336         268        active  
+      quiet          111       2230         265        active  
+ monz de siento      88        2392         200        active  
+   NITRO¥TEJAS       124       2177         110        active  
+   princess824       129       2891         82         active  
+      Sox4-          85        2180         68         active  
+     capalot         91        1994         43         active  
+     Carl..          101       2973         25         active  
+      mitch          90        1730          7         active  
+
+#########################################################################
+
+Ακολουθούν κάποια στατιστικά στοιχεία σχετικά με το Clan:
+
+Player Level
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+     12      99     122     124     149     218 
+
+War Stars
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    0.0    62.0   168.0   266.6   375.0  1339.0 

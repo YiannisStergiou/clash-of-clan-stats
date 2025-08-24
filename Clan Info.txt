@@ -1,0 +1,97 @@
+The following table has data of every member of your clan
+
+      Name          Level    Trophies    War.Stars    Activity 
+-----------------  -------  ----------  -----------  ----------
+    John Ster        220       5749        1389        active  
+     Ànthóny         180       2878        1062        active  
+      tinni          176       3115         968        active  
+      Zammy          175       2367         903       inactive 
+       KR            151       2334         767       inactive 
+ georgesal15820y     201       2635         733       inactive 
+       JD            167       2844         722       inactive 
+   KING HASIB        161       2870         675        active  
+     Tonmoy_         152       4743         603        active  
+ swagrubberducky     157       4430         512        active  
+   D’ explorer       124       3918         484        active  
+     Maria!          138       4104         476        active  
+    Max King         168       3229         475        active  
+ Skull Crusher 2     118       2358         428        active  
+     Neflis          126       4963         375        active  
+     McGoat0         131       1847         375       inactive 
+     Dekstar         105       1643         360       inactive 
+      isas           159       2314         342       inactive 
+       ra            153       3595         295        active  
+     Rupesh          150       3010         284        active  
+  THE GLADIATOR      134       2548         282       inactive 
+      quiet          112       2470         272        active  
+     GeorGe          125       3630         271        active  
+  ドラゴン ● V       119       2808         268        active  
+      isas2          128       2152         246       inactive 
+ monz de siento      92        2539         200        active  
+   NITRO¥TEJAS       127       2301         126        active  
+      Sox4-          89        2298         107        active  
+  Dasean Thomas      112       1943         105       inactive 
+   princess824       133       3153         102        active  
+      Bart           143       3636         99         active  
+     Purnota         174       2896         90         active  
+    k..haloi         109       1836         86         active  
+    xSamBellx        126       2191         84        inactive 
+     kayami          120       2332         79         active  
+ Arin the slayer     66        1567         78        inactive 
+      Skew           127       1621         76        inactive 
+  arun dev 143       173       2758         62         active  
+   pandar boss       99        1731         51        inactive 
+      pwag           143       2801         33         active  
+     Carl..          103       2763         25         active  
+ comandante Nava     105       1562         25        inactive 
+       you           87        1538         24        inactive 
+      hiru           111       1911         19         active  
+      mitch          90        1623          7         active  
+     jhon1w          91        1525          0        inactive 
+     Kapswlh         12        318           0        inactive 
+
+The following table has data of active members of your clan
+
+      Name          Level    Trophies    War.Stars    Activity 
+-----------------  -------  ----------  -----------  ----------
+    John Ster        220       5749        1389        active  
+     Ànthóny         180       2878        1062        active  
+      tinni          176       3115         968        active  
+   KING HASIB        161       2870         675        active  
+     Tonmoy_         152       4743         603        active  
+ swagrubberducky     157       4430         512        active  
+   D’ explorer       124       3918         484        active  
+     Maria!          138       4104         476        active  
+    Max King         168       3229         475        active  
+ Skull Crusher 2     118       2358         428        active  
+     Neflis          126       4963         375        active  
+       ra            153       3595         295        active  
+     Rupesh          150       3010         284        active  
+      quiet          112       2470         272        active  
+     GeorGe          125       3630         271        active  
+  ドラゴン ● V       119       2808         268        active  
+ monz de siento      92        2539         200        active  
+   NITRO¥TEJAS       127       2301         126        active  
+      Sox4-          89        2298         107        active  
+   princess824       133       3153         102        active  
+      Bart           143       3636         99         active  
+     Purnota         174       2896         90         active  
+    k..haloi         109       1836         86         active  
+     kayami          120       2332         79         active  
+  arun dev 143       173       2758         62         active  
+      pwag           143       2801         33         active  
+     Carl..          103       2763         25         active  
+      hiru           111       1911         19         active  
+      mitch          90        1623          7         active  
+
+#########################################################################
+
+Statistical analysis
+
+Player Level
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   12.0   110.0   127.0   131.1   155.0   220.0 
+
+War Stars
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    0.0    78.5   268.0   320.1   475.5  1389.0 

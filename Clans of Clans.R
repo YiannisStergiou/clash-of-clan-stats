@@ -1,37 +1,35 @@
 library(knitr)
 setwd("C:\\Users\\sterg\\Code\\R\\R Projects\\Clash of Clans Stats")
-playerdata              <-  read.csv("clania.csv", header = TRUE)
+playerdata              <-  read.csv("data.csv", header = TRUE)
 
 # ------------------------------------------------------------------------------
 
 player_activity         <- playerdata$attackWins > 0
 player_activity         <- ifelse(player_activity, "active", "inactive")
 
-# Δημηουργίας πίνακα mydata ο οποίος περιέχει δεδομένα
-# για όλους τους παίκτες στο clan
+# Create the main dataframe 'mydata' containing all clan members.
 mydata                  <-  data.frame(Name        = playerdata$name,
                                        Level       = playerdata$expLevel,
                                        Trophies    = playerdata$trophies,
                                        `War Stars` = playerdata$warStars,
                                        Activity    = player_activity)
 
-# Δημηουργία του  mydata_active πίνακα ο οποίος περιέχει δεδομένα
-# για τους παίκτες που είναι ενεργοί το τελευταίο sesson
+# Create the 'mydata_active' dataframe, filtering for players active in the current season.
 x                       <- mydata$Activity == "active"
 mydata_active           <- mydata[x, ]
 mydata_active           <- mydata_active[order(mydata_active$War.Stars,
                                                decreasing = TRUE), ]
 rownames(mydata_active) <- 1:nrow(mydata_active) # nolint
 
-# Ταξινόμηση πινάκων ο οποίος είναι απαραίτητο να γίνει μετά την δημιουργεία του
-# mydata_active γιατί κάνει mess up με τα δεδομένα του πίνακα
+# Sort the main 'mydata' dataframe. This is done after creating the active players subset
+# to ensure the original dataframe's row order is not disturbed during the filtering process.
 mydata                  <-  mydata[order(mydata$War.Stars,
                                          decreasing = TRUE), ]
 rownames(mydata)        <- 1:nrow(mydata)        # nolint
 
 # ------------------------------------------------------------------------------
 
-# Εδώ καταγράφουμε τα δεδομένα σε ένα αρχείο "Στατιστικά του Clan.txt"
+# Output the summary data to a text file named "Clan Info.txt".
 sink("Clan Info.txt")
 
 cat("The following table has data of every member of your clan")
@@ -41,7 +39,7 @@ print(kable(mydata,
 cat("\n")
 
 if (nrow(mydata_active) == nrow(mydata)) {
-  cat("Όλοι οι παίκτες μέσα στο clan είναι active")
+  cat("All clan members are active in the current season.")
   cat("\n")
 
 } else {
@@ -56,7 +54,7 @@ cat("\n\n")
 cat("Statistical analysis")
 cat("\n\n")
 
-# Στατιστική Ανάλυση των δεδομένων
+# Perform and print summary statistics.
 cat("Player Level")
 cat("\n")
 print(summary(mydata$Level))
@@ -69,7 +67,7 @@ sink()
 # ------------------------------------------------------------------------------
 
 png1         <- "Level Anlalysis.png"
-png(png1, width = 6000, height = 6000, res = 600)
+png(png1, width = 4000, height = 4000, res = 600)
 
 par(mfrow    = c(2, 2))
 qqnorm(mydata$Level,
@@ -79,19 +77,19 @@ qqnorm(mydata$Level,
 qqline(mydata$Level,
        col   = "Red")
 hist(mydata$Level,
-     main    = "Συχνότητα στα Levels των παικτών",
+     main    = "Player Level Frequency",
      col     = "Light Blue",
-     ylab    = "Συχνότητα",
+     ylab    = "Frequency",
      xlab    = "Level")
 boxplot(mydata$Level,
-        main = "Κατανομή των Level Παικτών",
+        main = "Player Level Distribution",
         col  = "Light Green",
         ylab = "Level")
 plot(density(mydata$Level),
      type    = "h",
      col     = "Light Blue",
-     main    = "Πυκνότητα στα Level των παικτών",
-     ylab    = "Πυκνότητα",
+     main    = "Player Level Density",
+     ylab    = "Density",
      xlab    = "Level")
 
 dev.off()
@@ -99,29 +97,29 @@ dev.off()
 # ------------------------------------------------------------------------------
 
 png2         <-  "War Stars Analysis.png"
-png(png2, width = 6000, height = 6000, res = 600)
+png(png2, width = 4000, height = 4000, res = 600)
 
 par(mfrow    = c(2, 2))
 qqnorm(mydata$War.Stars,
        main  = "War Stars vs Normal Distribution",
-       xlab  = "Κατανομή των Αστεριών",
+       xlab  = "Theoretical Quantiles",
        ylab  = "War Stars")
 qqline(mydata$War.Stars,
        col   = "Red")
 hist(mydata$War.Stars,
      main    = "War Stars Frequency",
      col     = "Light Blue",
-     xlab    = "Αριθμός Αστεριώn",
-     ylab    = "Συχνότητα")
+     xlab    = "Number of Stars",
+     ylab    = "Frequency")
 boxplot(mydata$War.Stars,
-        main = "Κατανομή των Αστεριών",
+        main = "War Star Distribution",
         col  = "Light Green",
         ylab = "War Stars")
 plot(density(mydata$War.Stars),
      type    = "h",
      col     = "Light Blue",
-     main    = "Πυκνότητα των Αστεριών των Παικτών",
-     ylab    = "Πυκνότητα",
+     main    = "Player War Star Density",
+     ylab    = "Density",
      xlab    = "War Stars")
 
 dev.off()

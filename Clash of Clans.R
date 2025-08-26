@@ -14,15 +14,18 @@ mydata                  <-  data.frame(Name        = playerdata$name,
                                        `War Stars` = playerdata$warStars,
                                        Activity    = player_activity)
 
-# Create the 'mydata_active' dataframe, filtering for players active in the current season.
+# Create the 'mydata_active' dataframe,
+# filtering for players active in the current season.
 x                       <- mydata$Activity == "active"
 mydata_active           <- mydata[x, ]
 mydata_active           <- mydata_active[order(mydata_active$War.Stars,
                                                decreasing = TRUE), ]
 rownames(mydata_active) <- 1:nrow(mydata_active) # nolint
 
-# Sort the main 'mydata' dataframe. This is done after creating the active players subset
-# to ensure the original dataframe's row order is not disturbed during the filtering process.
+# Sort the main 'mydata' dataframe.
+# This is done after creating the active players subset
+# to ensure the original dataframe's row order
+# is not disturbed during the filtering process.
 mydata                  <-  mydata[order(mydata$War.Stars,
                                          decreasing = TRUE), ]
 rownames(mydata)        <- 1:nrow(mydata)        # nolint

@@ -1,5 +1,4 @@
 library(knitr)
-setwd("C:\\Users\\sterg\\Code\\R\\R Projects\\Clash of Clans Stats")
 playerdata              <-  read.csv("data.csv", header = TRUE)
 
 # ------------------------------------------------------------------------------
